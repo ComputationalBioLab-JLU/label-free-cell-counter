@@ -74,7 +74,9 @@ The renset model can be trained de nove or making fine-tuning by loading resnet1
 ### Test_Part
 This part can test the whole model's performance, including Unet model, DBSCAN cluster and Resnet model.  
 Every parameter is in the config file :  
-    ```./label-free-cell-counter/TEST_MODEL/pred_config```  
+
+    ./label-free-cell-counter/TEST_MODEL/pred_config  
+    
 The config file includes models path, DBSCAN cluster's parameters and path of test dataset.
 The test program can be run by following command:  
 
