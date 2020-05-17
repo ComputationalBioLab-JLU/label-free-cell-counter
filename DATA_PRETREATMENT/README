@@ -1,0 +1,6 @@
+1 make_pkl           将tif图片文件转存为pkl文件
+2 split_RGB          将pkl文件中的数据按照不同的通道分开，形成R,G,B,CR,CB,CG,P七张图片，其中CR,CB,CG指的是彩色的图片,R,G,B为二值图片
+3 makedirs           将split_data划分成train,test,val三部分，并建立相应的文件夹
+4 make_unet_data     在makedirs的基础下将data文件切割成Unet的训练集，并从训练集中提取验证集
+5 make_resnet_data   将数据集的聚类结果合并成数据集，并从训练集中提取验证集
+6 cluster_part       cluster_model 根据细胞核染色图像聚类，并保存聚类结果

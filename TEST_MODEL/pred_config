@@ -1,0 +1,38 @@
+[base_path]
+
+[data_suffix]
+Pic_suffix         =P_
+B_suffix           =B_
+CB_suffix          =CB_
+G_suffix           =G_
+CG_suffix          =CG_
+R_suffix           =R_
+CR_suffix          =CR_
+RGB_suffix         =RGB_
+Unet_pred_suffix   =Unet_
+
+[model_path]
+Unet_model_path   = /state/heyang/ZHEDA_PROJECT_DATA/models/tcps_unet_model/Unet_iter_18.pth
+Resnet_model_path = /state/heyang/ZHEDA_PROJECT_DATA/models/tcps_resnet_model_alpha_0.2/TCPS_resnet18_100_alpha_0.2.pth
+[input_data]
+Data_path         = /state/heyang/ZHEDA_PROJECT_DATA/datas/tcps_data/train_data/test/test_imgs/
+[output_data]
+Output_file_path         = /state/heyang/ZHEDA_PROJECT_DATA/datas/tcps_data/test_result_alpha_0.2/
+Unet_pred_filename       =Unet_pred
+Cluster_pred_filename    =Cluster_pred
+Cluster_windows_filename =Cluster_windows
+Resnet_pred_filename     =Resnet_pred
+
+[Cluster_parameter]
+DBSCAN_eps         =10
+DBSCAN_min_samples =200
+Meanshift_bandwidth=23
+Up_bound           =1500
+Low_bound          =500
+#Low_bound = 800
+Point_color        =(0,0,255)
+cut_size           =112
+
+
+[resnet_parameter]
+cut_size=224
